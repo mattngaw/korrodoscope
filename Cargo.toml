@@ -1,0 +1,22 @@
+[package]
+name = "korrodoscope"
+version = "0.0.1"
+authors = ["Matt Ngaw <mngaw@andrew.cmu.edu>"]
+
+[lib]
+name = "korrodoscope"
+path = "src/lib.rs"
+
+[[bin]]
+name = "korrodoscope"
+path = "src/main.rs"
+
+[dependencies]
+docopt = "0.6"
+llvm-sys = "*"
+regex = "*"
+regex_macros = "*"
+rustc-serialize = "0.3"
+
+[dependencies.iron_llvm]
+git = "https://github.com/jauhien/iron-llvm.git"
